@@ -1,4 +1,4 @@
-package com.development.hybrid.schedule.ui.gallery
+package com.development.hybrid.schedule.views.main.ui.electronic
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,15 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.development.hybrid.schedule.R
-import com.development.hybrid.schedule.databinding.FragmentGalleryBinding
+import com.development.hybrid.schedule.databinding.FragmentElectronicBinding
 
-class GalleryFragment : Fragment() {
+class ElectronicFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
-    private var _binding: FragmentGalleryBinding? = null
+    private lateinit var electronicViewModel: ElectronicViewModel
+    private var _binding: FragmentElectronicBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,15 +22,15 @@ class GalleryFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+    ): View {
+        electronicViewModel =
+            ViewModelProvider(this).get(ElectronicViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentElectronicBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        electronicViewModel.text.observe(viewLifecycleOwner, {
             textView.text = it
         })
         return root

@@ -1,13 +1,13 @@
-package com.development.hybrid.schedule.ui.slideshow
+package com.development.hybrid.schedule.views.main.ui.electronic
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class ElectronicViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "This is electronic Fragment"
     }
     val text: LiveData<String> = _text
 }
