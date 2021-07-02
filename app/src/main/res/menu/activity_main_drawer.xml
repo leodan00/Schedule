@@ -6,15 +6,74 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_baseline_menu_home"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_electronic"
+            android:icon="@drawable/ic_baseline_menu_alternate"
+            android:title="@string/menu_electronic" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_meeting"
+            android:icon="@drawable/ic_baseline_menu_business"
+            android:title="@string/menu_meeting" />
+
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/ic_baseline_menu_book"
+            android:title="@string/menu_personal" />
     </group>
+
+    <group
+        android:id="@+id/groupMenuOne"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personal_activity"
+            android:icon="@drawable/ic_baseline_menu_emoji_people"
+            android:title="@string/menu_personal_activities" />
+        <item
+            android:id="@+id/nav_personal_diary"
+            android:icon="@drawable/ic_baseline_menu_portrait"
+            android:title="@string/menu_personal_diary" />
+    </group>
+
+    <item android:title="@string/menu_sub_header_title">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_baseline_menu_bullhorn"
+                    android:title="@string/menu_contact" />
+                <item
+                    android:id="@+id/nav_help_feedback"
+                    android:icon="@drawable/ic_baseline_menu_help"
+                    android:title="@string/menu_help_feedback" />
+                <item
+                    android:id="@+id/nav_open_source"
+                    android:icon="@drawable/ic_baseline_menu_github"
+                    android:title="@string/menu_open_source" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_baseline_menu_share"
+                    android:title="@string/menu_share" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_footer_title">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_privacy"
+                    android:title="@string/menu_privacy" />
+                <item
+                    android:id="@+id/nav_terms_service"
+                    android:title="@string/menu_terms_services" />
+
+                <item
+                    android:id="@+id/nav_about"
+                    android:title="@string/menu_about" />
+            </group>
+        </menu>
+    </item>
+
 </menu>

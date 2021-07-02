@@ -1,4 +1,4 @@
-package com.development.hybrid.schedule.ui.home
+package com.development.hybrid.schedule.views.main.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
